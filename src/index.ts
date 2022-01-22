@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import fetch from 'cross-fetch'
 import { diffString } from 'json-diff'
+import fetch from 'minipass-fetch'
 
 const read = (name: string) => fs.readFileSync(name, 'utf8')
 const readJson = (name: string) => JSON.parse(read(name))

@@ -11,6 +11,14 @@ const write = (name: string, data: string) => {
 }
 const writeJson = (name: string, data: any) => write(name, JSON.stringify(data, null, 2))
 const copy = (data: any) => JSON.parse(JSON.stringify(data))
+const sort = (data: any) => {
+  const sorted = Object.fromEntries(
+    Object.entries(data).sort(([a]: any, [b]: any) => (a > b ? 1 : -1))
+  )
+  for (const key in data) delete data[key]
+  Object.assign(data, sorted)
+  return data
+}
 
 export const pullConfigs = (remote: string, local: string) => {
   const assign = Object.assign
@@ -73,7 +81,7 @@ export const pullConfigs = (remote: string, local: string) => {
     }
   }
 
-  return { assign, omit, merge, replace }
+  return { assign, omit, sort, merge, replace }
 }
 
 export default pullConfigs

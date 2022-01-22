@@ -9,7 +9,7 @@ const write = (name: string, data: string) => {
   fs.mkdirSync(path.dirname(name), { recursive: true })
   fs.writeFileSync(name, data, 'utf8')
 }
-const writeJson = (name: string, data: any) => write(name, JSON.stringify(data, null, 2))
+const writeJson = (name: string, data: any) => write(name, JSON.stringify(data, null, 2) + '\n')
 const copy = (data: any) => JSON.parse(JSON.stringify(data))
 const sort = (data: any) => {
   const sorted = Object.fromEntries(

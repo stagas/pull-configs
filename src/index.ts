@@ -29,6 +29,12 @@ export const pullConfigs = (remote: string, local: string) => {
     return result
   }
 
+  const pick = (obj: Record<string, any>, keys: string[]): Record<string, any> => {
+    const result: Record<string, any> = {}
+    for (const key of keys) result[key] = obj[key]
+    return result
+  }
+
   const fail = (file: string, res: Response) => {
     console.log('failed:', file, res.status, res.statusText)
   }
@@ -81,7 +87,7 @@ export const pullConfigs = (remote: string, local: string) => {
     }
   }
 
-  return { assign, omit, sort, merge, replace }
+  return { assign, omit, pick, sort, merge, replace }
 }
 
 export default pullConfigs

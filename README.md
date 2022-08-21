@@ -1,87 +1,35 @@
-<h1 align="center">pull-configs</h1>
+<h1>
+pull-configs <a href="https://npmjs.org/package/pull-configs"><img src="https://img.shields.io/badge/npm-v1.0.0-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-77-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/pull-configs@1.0.0/dist/pull-configs.min.js"><img src="https://img.shields.io/badge/brotli-19.9K-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
+</h1>
 
-<p align="center">
+<p></p>
+
 pulls configuration files from a remote location and merges them with local
-</p>
 
-<p align="center">
-   <a href="#install">        🔧 <strong>Install</strong></a>
- · <a href="#example">        🧩 <strong>Example</strong></a>
- · <a href="#api">            📜 <strong>API docs</strong></a>
- · <a href="https://github.com/stagas/pull-configs/releases"> 🔥 <strong>Releases</strong></a>
- · <a href="#contribute">     💪🏼 <strong>Contribute</strong></a>
- · <a href="https://github.com/stagas/pull-configs/issues">   🖐️ <strong>Help</strong></a>
-</p>
+<h4>
+<table><tr><td title="Triple click to select and copy paste">
+<code>npm i pull-configs </code>
+</td><td title="Triple click to select and copy paste">
+<code>pnpm add pull-configs </code>
+</td><td title="Triple click to select and copy paste">
+<code>yarn add pull-configs</code>
+</td></tr></table>
+</h4>
 
----
+## API
 
-## Install
+<p>  <details id="pullConfigs$1" title="Function" ><summary><span><a href="#pullConfigs$1">#</a></span>  <code><strong>pullConfigs</strong></code><em>(remote, local)</em>    </summary>  <a href="src/index.ts#L22">src/index.ts#L22</a>  <ul>    <p>    <details id="remote$3" title="Parameter" ><summary><span><a href="#remote$3">#</a></span>  <code><strong>remote</strong></code>    </summary>    <ul><p>string</p>        </ul></details><details id="local$4" title="Parameter" ><summary><span><a href="#local$4">#</a></span>  <code><strong>local</strong></code>    </summary>    <ul><p>string</p>        </ul></details>  <p><strong>pullConfigs</strong><em>(remote, local)</em>  &nbsp;=&gt;  <ul>{<p>  <details id="assign$6" title="Property" ><summary><span><a href="#assign$6">#</a></span>  <code><strong>assign</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p>{<p>    <details id="target$12" title="Parameter" ><summary><span><a href="#target$12">#</a></span>  <code><strong>target</strong></code>    </summary>    <ul><p><a href="#T$10">T</a></p>        </ul></details><details id="source$13" title="Parameter" ><summary><span><a href="#source$13">#</a></span>  <code><strong>source</strong></code>    </summary>    <ul><p><a href="#U$11">U</a></p>        </ul></details>  <p><strong></strong>&lt;<span>T</span>, <span>U</span>&gt;<em>(target, source)</em>  &nbsp;=&gt;  <ul><a href="#T$10">T</a> &amp; <a href="#U$11">U</a></ul></p>  <details id="target$19" title="Parameter" ><summary><span><a href="#target$19">#</a></span>  <code><strong>target</strong></code>    </summary>    <ul><p><a href="#T$16">T</a></p>        </ul></details><details id="source1$20" title="Parameter" ><summary><span><a href="#source1$20">#</a></span>  <code><strong>source1</strong></code>    </summary>    <ul><p><a href="#U$17">U</a></p>        </ul></details><details id="source2$21" title="Parameter" ><summary><span><a href="#source2$21">#</a></span>  <code><strong>source2</strong></code>    </summary>    <ul><p><a href="#V$18">V</a></p>        </ul></details>  <p><strong></strong>&lt;<span>T</span>, <span>U</span>, <span>V</span>&gt;<em>(target, source1, source2)</em>  &nbsp;=&gt;  <ul><a href="#T$16">T</a> &amp; <a href="#U$17">U</a> &amp; <a href="#V$18">V</a></ul></p>  <details id="target$28" title="Parameter" ><summary><span><a href="#target$28">#</a></span>  <code><strong>target</strong></code>    </summary>    <ul><p><a href="#T$24">T</a></p>        </ul></details><details id="source1$29" title="Parameter" ><summary><span><a href="#source1$29">#</a></span>  <code><strong>source1</strong></code>    </summary>    <ul><p><a href="#U$25">U</a></p>        </ul></details><details id="source2$30" title="Parameter" ><summary><span><a href="#source2$30">#</a></span>  <code><strong>source2</strong></code>    </summary>    <ul><p><a href="#V$26">V</a></p>        </ul></details><details id="source3$31" title="Parameter" ><summary><span><a href="#source3$31">#</a></span>  <code><strong>source3</strong></code>    </summary>    <ul><p><a href="#W$27">W</a></p>        </ul></details>  <p><strong></strong>&lt;<span>T</span>, <span>U</span>, <span>V</span>, <span>W</span>&gt;<em>(target, source1, source2, source3)</em>  &nbsp;=&gt;  <ul><a href="#T$24">T</a> &amp; <a href="#U$25">U</a> &amp; <a href="#V$26">V</a> &amp; <a href="#W$27">W</a></ul></p>  <details id="target$33" title="Parameter" ><summary><span><a href="#target$33">#</a></span>  <code><strong>target</strong></code>    </summary>    <ul><p>object</p>        </ul></details><details id="sources$34" title="Parameter" ><summary><span><a href="#sources$34">#</a></span>  <code><strong>sources</strong></code>    </summary>    <ul><p>any  []</p>        </ul></details>  <p><strong></strong><em>(target, sources)</em>  &nbsp;=&gt;  <ul>any</ul></p></p>}</p>        </ul></details><details id="merge$49" title="Property" ><summary><span><a href="#merge$49">#</a></span>  <code><strong>merge</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$50" title="Function" ><summary><span><a href="#__type$50">#</a></span>  <em>(file, replacer)</em>    </summary>    <ul>    <p>    <details id="file$52" title="Parameter" ><summary><span><a href="#file$52">#</a></span>  <code><strong>file</strong></code>    </summary>    <ul><p>string</p>        </ul></details><details id="replacer$53" title="Function" ><summary><span><a href="#replacer$53">#</a></span>  <code><strong>replacer</strong></code><em>(prev, next)</em>    </summary>    <ul>    <p>    <details id="prev$56" title="Parameter" ><summary><span><a href="#prev$56">#</a></span>  <code><strong>prev</strong></code>    </summary>    <ul><p>any</p>        </ul></details><details id="next$57" title="Parameter" ><summary><span><a href="#next$57">#</a></span>  <code><strong>next</strong></code>    </summary>    <ul><p>any</p>        </ul></details>  <p><strong>replacer</strong><em>(prev, next)</em>  &nbsp;=&gt;  <ul>void</ul></p></p>    </ul></details>  <p><strong></strong><em>(file, replacer)</em>  &nbsp;=&gt;  <ul><span>Promise</span>&lt;void&gt;</ul></p></p>    </ul></details></p>        </ul></details><details id="omit$35" title="Property" ><summary><span><a href="#omit$35">#</a></span>  <code><strong>omit</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$36" title="Function" ><summary><span><a href="#__type$36">#</a></span>  <em>(obj, keys)</em>    </summary>    <ul>    <p>    <details id="obj$38" title="Parameter" ><summary><span><a href="#obj$38">#</a></span>  <code><strong>obj</strong></code>    </summary>    <ul><p><span>Record</span>&lt;string, any&gt;</p>        </ul></details><details id="keys$39" title="Parameter" ><summary><span><a href="#keys$39">#</a></span>  <code><strong>keys</strong></code>    </summary>    <ul><p>string  []</p>        </ul></details>  <p><strong></strong><em>(obj, keys)</em>  &nbsp;=&gt;  <ul><span>Record</span>&lt;string, any&gt;</ul></p></p>    </ul></details></p>        </ul></details><details id="pick$40" title="Property" ><summary><span><a href="#pick$40">#</a></span>  <code><strong>pick</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$41" title="Function" ><summary><span><a href="#__type$41">#</a></span>  <em>(obj, keys)</em>    </summary>    <ul>    <p>    <details id="obj$43" title="Parameter" ><summary><span><a href="#obj$43">#</a></span>  <code><strong>obj</strong></code>    </summary>    <ul><p><span>Record</span>&lt;string, any&gt;</p>        </ul></details><details id="keys$44" title="Parameter" ><summary><span><a href="#keys$44">#</a></span>  <code><strong>keys</strong></code>    </summary>    <ul><p>string  []</p>        </ul></details>  <p><strong></strong><em>(obj, keys)</em>  &nbsp;=&gt;  <ul><span>Record</span>&lt;string, any&gt;</ul></p></p>    </ul></details></p>        </ul></details><details id="replace$58" title="Property" ><summary><span><a href="#replace$58">#</a></span>  <code><strong>replace</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$59" title="Function" ><summary><span><a href="#__type$59">#</a></span>  <em>(file)</em>    </summary>    <ul>    <p>    <details id="file$61" title="Parameter" ><summary><span><a href="#file$61">#</a></span>  <code><strong>file</strong></code>    </summary>    <ul><p>string</p>        </ul></details>  <p><strong></strong><em>(file)</em>  &nbsp;=&gt;  <ul><span>Promise</span>&lt;void&gt;</ul></p></p>    </ul></details></p>        </ul></details><details id="sort$45" title="Property" ><summary><span><a href="#sort$45">#</a></span>  <code><strong>sort</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$46" title="Function" ><summary><span><a href="#__type$46">#</a></span>  <em>(data)</em>    </summary>    <ul>    <p>    <details id="data$48" title="Parameter" ><summary><span><a href="#data$48">#</a></span>  <code><strong>data</strong></code>    </summary>    <ul><p>any</p>        </ul></details>  <p><strong></strong><em>(data)</em>  &nbsp;=&gt;  <ul>any</ul></p></p>    </ul></details></p>        </ul></details></p>}</ul></p></p>    </ul></details><details id="pullConfigs$1" title="Function" open><summary><span><a href="#pullConfigs$1">#</a></span>  <code><strong>pullConfigs</strong></code><em>(remote, local)</em>    </summary>  <a href="src/index.ts#L22">src/index.ts#L22</a>  <ul>    <p>    <details id="remote$3" title="Parameter" ><summary><span><a href="#remote$3">#</a></span>  <code><strong>remote</strong></code>    </summary>    <ul><p>string</p>        </ul></details><details id="local$4" title="Parameter" ><summary><span><a href="#local$4">#</a></span>  <code><strong>local</strong></code>    </summary>    <ul><p>string</p>        </ul></details>  <p><strong>pullConfigs</strong><em>(remote, local)</em>  &nbsp;=&gt;  <ul>{<p>  <details id="assign$6" title="Property" ><summary><span><a href="#assign$6">#</a></span>  <code><strong>assign</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p>{<p>    <details id="target$12" title="Parameter" ><summary><span><a href="#target$12">#</a></span>  <code><strong>target</strong></code>    </summary>    <ul><p><a href="#T$10">T</a></p>        </ul></details><details id="source$13" title="Parameter" ><summary><span><a href="#source$13">#</a></span>  <code><strong>source</strong></code>    </summary>    <ul><p><a href="#U$11">U</a></p>        </ul></details>  <p><strong></strong>&lt;<span>T</span>, <span>U</span>&gt;<em>(target, source)</em>  &nbsp;=&gt;  <ul><a href="#T$10">T</a> &amp; <a href="#U$11">U</a></ul></p>  <details id="target$19" title="Parameter" ><summary><span><a href="#target$19">#</a></span>  <code><strong>target</strong></code>    </summary>    <ul><p><a href="#T$16">T</a></p>        </ul></details><details id="source1$20" title="Parameter" ><summary><span><a href="#source1$20">#</a></span>  <code><strong>source1</strong></code>    </summary>    <ul><p><a href="#U$17">U</a></p>        </ul></details><details id="source2$21" title="Parameter" ><summary><span><a href="#source2$21">#</a></span>  <code><strong>source2</strong></code>    </summary>    <ul><p><a href="#V$18">V</a></p>        </ul></details>  <p><strong></strong>&lt;<span>T</span>, <span>U</span>, <span>V</span>&gt;<em>(target, source1, source2)</em>  &nbsp;=&gt;  <ul><a href="#T$16">T</a> &amp; <a href="#U$17">U</a> &amp; <a href="#V$18">V</a></ul></p>  <details id="target$28" title="Parameter" ><summary><span><a href="#target$28">#</a></span>  <code><strong>target</strong></code>    </summary>    <ul><p><a href="#T$24">T</a></p>        </ul></details><details id="source1$29" title="Parameter" ><summary><span><a href="#source1$29">#</a></span>  <code><strong>source1</strong></code>    </summary>    <ul><p><a href="#U$25">U</a></p>        </ul></details><details id="source2$30" title="Parameter" ><summary><span><a href="#source2$30">#</a></span>  <code><strong>source2</strong></code>    </summary>    <ul><p><a href="#V$26">V</a></p>        </ul></details><details id="source3$31" title="Parameter" ><summary><span><a href="#source3$31">#</a></span>  <code><strong>source3</strong></code>    </summary>    <ul><p><a href="#W$27">W</a></p>        </ul></details>  <p><strong></strong>&lt;<span>T</span>, <span>U</span>, <span>V</span>, <span>W</span>&gt;<em>(target, source1, source2, source3)</em>  &nbsp;=&gt;  <ul><a href="#T$24">T</a> &amp; <a href="#U$25">U</a> &amp; <a href="#V$26">V</a> &amp; <a href="#W$27">W</a></ul></p>  <details id="target$33" title="Parameter" ><summary><span><a href="#target$33">#</a></span>  <code><strong>target</strong></code>    </summary>    <ul><p>object</p>        </ul></details><details id="sources$34" title="Parameter" ><summary><span><a href="#sources$34">#</a></span>  <code><strong>sources</strong></code>    </summary>    <ul><p>any  []</p>        </ul></details>  <p><strong></strong><em>(target, sources)</em>  &nbsp;=&gt;  <ul>any</ul></p></p>}</p>        </ul></details><details id="merge$49" title="Property" ><summary><span><a href="#merge$49">#</a></span>  <code><strong>merge</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$50" title="Function" ><summary><span><a href="#__type$50">#</a></span>  <em>(file, replacer)</em>    </summary>    <ul>    <p>    <details id="file$52" title="Parameter" ><summary><span><a href="#file$52">#</a></span>  <code><strong>file</strong></code>    </summary>    <ul><p>string</p>        </ul></details><details id="replacer$53" title="Function" ><summary><span><a href="#replacer$53">#</a></span>  <code><strong>replacer</strong></code><em>(prev, next)</em>    </summary>    <ul>    <p>    <details id="prev$56" title="Parameter" ><summary><span><a href="#prev$56">#</a></span>  <code><strong>prev</strong></code>    </summary>    <ul><p>any</p>        </ul></details><details id="next$57" title="Parameter" ><summary><span><a href="#next$57">#</a></span>  <code><strong>next</strong></code>    </summary>    <ul><p>any</p>        </ul></details>  <p><strong>replacer</strong><em>(prev, next)</em>  &nbsp;=&gt;  <ul>void</ul></p></p>    </ul></details>  <p><strong></strong><em>(file, replacer)</em>  &nbsp;=&gt;  <ul><span>Promise</span>&lt;void&gt;</ul></p></p>    </ul></details></p>        </ul></details><details id="omit$35" title="Property" ><summary><span><a href="#omit$35">#</a></span>  <code><strong>omit</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$36" title="Function" ><summary><span><a href="#__type$36">#</a></span>  <em>(obj, keys)</em>    </summary>    <ul>    <p>    <details id="obj$38" title="Parameter" ><summary><span><a href="#obj$38">#</a></span>  <code><strong>obj</strong></code>    </summary>    <ul><p><span>Record</span>&lt;string, any&gt;</p>        </ul></details><details id="keys$39" title="Parameter" ><summary><span><a href="#keys$39">#</a></span>  <code><strong>keys</strong></code>    </summary>    <ul><p>string  []</p>        </ul></details>  <p><strong></strong><em>(obj, keys)</em>  &nbsp;=&gt;  <ul><span>Record</span>&lt;string, any&gt;</ul></p></p>    </ul></details></p>        </ul></details><details id="pick$40" title="Property" ><summary><span><a href="#pick$40">#</a></span>  <code><strong>pick</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$41" title="Function" ><summary><span><a href="#__type$41">#</a></span>  <em>(obj, keys)</em>    </summary>    <ul>    <p>    <details id="obj$43" title="Parameter" ><summary><span><a href="#obj$43">#</a></span>  <code><strong>obj</strong></code>    </summary>    <ul><p><span>Record</span>&lt;string, any&gt;</p>        </ul></details><details id="keys$44" title="Parameter" ><summary><span><a href="#keys$44">#</a></span>  <code><strong>keys</strong></code>    </summary>    <ul><p>string  []</p>        </ul></details>  <p><strong></strong><em>(obj, keys)</em>  &nbsp;=&gt;  <ul><span>Record</span>&lt;string, any&gt;</ul></p></p>    </ul></details></p>        </ul></details><details id="replace$58" title="Property" ><summary><span><a href="#replace$58">#</a></span>  <code><strong>replace</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$59" title="Function" ><summary><span><a href="#__type$59">#</a></span>  <em>(file)</em>    </summary>    <ul>    <p>    <details id="file$61" title="Parameter" ><summary><span><a href="#file$61">#</a></span>  <code><strong>file</strong></code>    </summary>    <ul><p>string</p>        </ul></details>  <p><strong></strong><em>(file)</em>  &nbsp;=&gt;  <ul><span>Promise</span>&lt;void&gt;</ul></p></p>    </ul></details></p>        </ul></details><details id="sort$45" title="Property" ><summary><span><a href="#sort$45">#</a></span>  <code><strong>sort</strong></code>    </summary>  <a href="src/index.ts#L89">src/index.ts#L89</a>  <ul><p><details id="__type$46" title="Function" ><summary><span><a href="#__type$46">#</a></span>  <em>(data)</em>    </summary>    <ul>    <p>    <details id="data$48" title="Parameter" ><summary><span><a href="#data$48">#</a></span>  <code><strong>data</strong></code>    </summary>    <ul><p>any</p>        </ul></details>  <p><strong></strong><em>(data)</em>  &nbsp;=&gt;  <ul>any</ul></p></p>    </ul></details></p>        </ul></details></p>}</ul></p></p>    </ul></details></p>
 
-```sh
-$ npm i pull-configs
-```
+## Credits
 
-## Example
+- [json-diff](https://npmjs.org/package/json-diff) by [Andrey Tarantsov](https://github.com/andreyvit) &ndash; JSON diff
 
-`.pull-configs.js` :
+## Contributing
 
-```js
-const { pullConfigs } = require('pull-configs')
-
-const local = __dirname + '/'
-const remote = 'https://github.com/stagas/typescript-minimal-template/raw/main/'
-
-const { assign, omit, sort, merge, replace } = pullConfigs(remote, local)
-
-merge('package.json', (prev, next) => {
-  assign(prev.scripts, omit(next.scripts, ['build:min']))
-  sort(assign(prev.devDependencies, next.devDependencies))
-})
-replace('.eslintrc.js')
-replace('.prettierrc')
-replace('jest.config.js')
-replace('tsconfig.json')
-replace('web-test-runner.config.js')
-merge('.vscode/settings.json')
-```
-
-```sh
-node .pull-configs.js
-```
-
-Result:
-
-```diff
-merging: package.json
- {
-   scripts: {
--    prepush: "npm run lint"
-+    prepush: "npm run lint && npm run test"
--    prepack: "npm run build"
-+    prepack: "npm run clean && npm run build"
-   }
- }
-
-replacing: .eslintrc.js
-adding: .prettierrc
-```
-
-To automate this process you could add it in the `"prepare"` script in `package.json`:
-
-```json
-"prepare": "node .pull-configs.js"
-```
-
-This way it will run after every fresh `npm install`.
-
-## Contribute
-
-[Fork](https://github.com/stagas/pull-configs/fork) or
-[edit](https://github.dev/stagas/pull-configs) and submit a PR.
+[Fork](https://github.com/stagas/pull-configs/fork) or [edit](https://github.dev/stagas/pull-configs) and submit a PR.
 
 All contributions are welcome!
 
 ## License
 
-MIT &copy; 2022
-[stagas](https://github.com/stagas)
+<a href="LICENSE">MIT</a> &copy; 2022 [stagas](https://github.com/stagas)

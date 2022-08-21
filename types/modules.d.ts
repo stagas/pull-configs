@@ -1,3 +1,3 @@
-// ambient types like:
-declare module 'json-diff'
-declare module 'minipass-fetch'
+/* ambient types like: */
+
+// declare module 'scoped-registries'
